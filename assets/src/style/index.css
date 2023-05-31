@@ -1,0 +1,697 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --bg: #303030;
+    --primary-color: #C07212;
+    --grey: #F9F9F9;
+    --radius: 30px;
+}
+
+header {
+    width: 100%;
+    padding: 2rem;
+    background: var(--bg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+header p {
+    font-size: .8rem;
+}
+
+section {
+    width: 100%;
+    background: var(--grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+div.box {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: .3rem;
+}
+
+div.box h3 {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+main div.left {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+main div.right {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+
+main div.right figure {
+    width: 100%;
+}
+
+main div.right figure img {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 45vh;
+    background: var(--bg);
+    padding: 2rem;
+}
+
+footer form {
+    height: 100%;
+    color: aliceblue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+
+}
+
+footer form h1 {
+    font-size: 1.5rem;
+}
+
+footer form input {
+    height: 6vh;
+    width: 80%;
+    border: 2px solid #303030;
+    border-radius: .5rem;
+    padding: .5rem;
+    outline: 2px solid #303030;
+    font-size: 1rem;
+}
+
+footer form input:focus {
+    border: 2px solid var(--primary-color);
+}
+
+footer form button {
+    border-radius: .5rem;
+    border: 2px solid var(--primary-color);
+    height: 6vh;
+    width: 60%;
+    font-size: 1rem;
+    color: white;
+    background: var(--primary-color);
+    cursor: pointer;
+}
+
+@media (min-width: 500px) {
+    header {
+        width: 100%;
+        height: 50vh;
+        padding: 2rem;
+        background: var(--bg);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    section {
+        width: 100%;
+        background: var(--grey);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 2rem;
+        flex-wrap: wrap;
+        height: 30vh;
+    }
+    
+    div.box {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: .3rem;
+        height: 5vh;
+    }
+    
+    div.box h3 {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    main div.left {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        width: 50%;
+        height: 100%;
+    }
+    
+    main div.right {
+        width: 50%;
+        height: 100%;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main div.right figure {
+        width: 100%;
+    }
+    
+    main div.right figure img {
+        width: 100%;
+    }
+    
+    footer {
+        width: 100%;
+        height: 45vh;
+        background: var(--bg);
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer form {
+        height: 100%;
+        color: aliceblue;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    
+    }
+    
+    footer form h1 {
+        font-size: 1.5rem;
+    }
+    
+    footer form input {
+        height: 7vh;
+        width: 60%;
+        border: 2px solid #303030;
+        border-radius: .5rem;
+        padding: .5rem;
+        outline: 2px solid #303030;
+        font-size: 1rem;
+    }
+    
+    footer form input:focus {
+        border: 2px solid var(--primary-color);
+    }
+    
+    footer form button {
+        border-radius: .5rem;
+        border: 2px solid var(--primary-color);
+        height: 6vh;
+        width: 60%;
+        font-size: 1rem;
+        color: white;
+        background: var(--primary-color);
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        width: 100%;
+        height: 35vh;
+        padding: 2rem;
+        background: var(--bg);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    section {
+        width: 100%;
+        background: var(--grey);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 2rem;
+        flex-wrap: wrap;
+        height: 20vh;
+    }
+    
+    div.box {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: .3rem;
+        height: 5vh;
+    }
+    
+    div.box h3 {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    main div.left {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        width: 60%;
+        height: 100%;
+    }
+    
+    main div.right {
+        width: 40%;
+        height: 100%;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main div.right figure {
+        width: 100%;
+    }
+    
+    main div.right figure img {
+        width: 100%;
+    }
+    
+    footer {
+        width: 100%;
+        height: 35vh;
+        background: var(--bg);
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer form {
+        height: 100%;
+        color: aliceblue;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    
+    }
+    
+    footer form h1 {
+        font-size: 1.5rem;
+    }
+    
+    footer form input {
+        height: 5vh;
+        width: 60%;
+        border: 2px solid #303030;
+        border-radius: .5rem;
+        padding: .5rem;
+        outline: 2px solid #303030;
+        font-size: 1rem;
+    }
+    
+    footer form input:focus {
+        border: 2px solid var(--primary-color);
+    }
+    
+    footer form button {
+        border-radius: .5rem;
+        border: 2px solid var(--primary-color);
+        height: 5vh;
+        width: 60%;
+        font-size: 1rem;
+        color: white;
+        background: var(--primary-color);
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        width: 100%;
+        height: 35vh;
+        padding: 2rem;
+        background: var(--bg);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    section {
+        width: 100%;
+        background: var(--grey);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 2rem;
+        flex-wrap: wrap;
+        height: 20vh;
+    }
+    
+    div.box {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: .3rem;
+        height: 5vh;
+    }
+    
+    div.box h3 {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    main div.left {
+        padding: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        width: 60%;
+        height: 100%;
+    }
+    
+    main div.right {
+        width: 40%;
+        height: 100%;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main div.right figure {
+        width: 100%;
+    }
+    
+    main div.right figure img {
+        width: 100%;
+    }
+    
+    footer {
+        width: 100%;
+        height: 45vh;
+        background: var(--bg);
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer form {
+        height: 100%;
+        color: aliceblue;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    
+    }
+    
+    footer form h1 {
+        font-size: 1.5rem;
+    }
+    
+    footer form input {
+        height: 7vh;
+        width: 60%;
+        border: 2px solid #303030;
+        border-radius: .5rem;
+        padding: .5rem;
+        outline: 2px solid #303030;
+        font-size: 1rem;
+    }
+    
+    footer form input:focus {
+        border: 2px solid var(--primary-color);
+    }
+    
+    footer form button {
+        border-radius: .5rem;
+        border: 2px solid var(--primary-color);
+        height: 7vh;
+        width: 60%;
+        font-size: 1rem;
+        color: white;
+        background: var(--primary-color);
+    }
+}
+
+@media (min-width: 1440px) {
+    header {
+        width: 100%;
+        height: 35vh;
+        padding: 2rem;
+        background: var(--bg);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+    
+    header p {
+        font-size: 1.3rem;
+    }
+    
+    section {
+        width: 100%;
+        background: var(--grey);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 2rem;
+        flex-wrap: wrap;
+        height: 20vh;
+    }
+    
+    div.box {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: .3rem;
+        height: 5vh;
+    }
+    
+    div.box h3 {
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
+    div.box p {
+        font-size: 1.3rem;
+    }
+    
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    main div.left {
+        padding: 7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        width: 60%;
+        height: 100%;
+    }
+    
+    main div.left h2 {
+        font-size: 2rem;
+    }
+
+    main div.left p {
+        font-size: 1.3rem;
+    }
+
+    main div.right {
+        width: 40%;
+        height: 100%;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main div.right figure {
+        width: 100%;
+    }
+    
+    main div.right figure img {
+        width: 100%;
+    }
+    
+    footer {
+        width: 100%;
+        height: 45vh;
+        background: var(--bg);
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer form {
+        height: 100%;
+        color: aliceblue;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    
+    }
+    
+    footer form h1 {
+        font-size: 2rem;
+    }
+    
+    footer form input {
+        height: 6vh;
+        width: 60%;
+        border: 2px solid #303030;
+        border-radius: .5rem;
+        padding: 1rem;
+        outline: 2px solid #303030;
+        font-size: 1.5rem;
+    }
+    
+    footer form input:focus {
+        border: 2px solid var(--primary-color);
+    }
+    
+    footer form button {
+        border-radius: .5rem;
+        border: 2px solid var(--primary-color);
+        height: 6vh;
+        width: 60%;
+        font-size: 1.5rem;
+        color: white;
+        background: var(--primary-color);
+    }
+}
