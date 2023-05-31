@@ -45,8 +45,11 @@ Modo Mobile 📲
 
 ## Deployment ☁
 
-Deploy realizado pela plataforma Vercel. Clique no botão abaixo e acesse o projeto.<br>
-[![portfolio](https://img.shields.io/badge/-CLIQUE%20AQUI-yellowgreen)]()
+Deploy realizado pela plataforma Vercel, clique no botão abaixo e acesse o projeto.<br>
+[![portfolio](https://img.shields.io/badge/-CLIQUE%20AQUI-yellowgreen)](https://entrega-arquitetura.vercel.app)<br>
+
+Clique no botão abaixo para acessar a planilha.<br>
+[![portfolio](https://img.shields.io/badge/-PLANILHA-blue)](https://docs.google.com/spreadsheets/d/1oxJV4zVlXyM2vWaqe0nP0rr78qjuCfO-Hlj9MlOUfLo/edit?usp=sharing)<br>
 
 ## Como rodar
 Clone esse repositório em um diretório na sua máquina local, abra o diretório utilizando a sua IDE de preferência e/ou abra o arquivo ```.html``` em seu navegador.
